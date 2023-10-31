@@ -1,0 +1,16 @@
+{
+    "data": [
+        {
+            "title": "Authentify : Supplychain Management System",
+            "description": "It is a blockchain based supplychain management system. The Core technologies used are Etherium Block Chain, Smart Contracts, Solidity and JavaScript.",
+            "link": "https://github.com/AbhijeetSinghHada/Authentify",
+            "image": "./data/projects/authentify.jpg"
+        },
+        {
+            "title": "Parking Management System",
+            "description": "Fast API based Parking Management System. The Core technologies used are Fast API, Python and MySQL.",
+            "image": "./data/projects/parking.jpg",
+            "link": "https://github.com/AbhijeetSinghHada/Parking_Management_System_FastAPI"
+        }
+    ]
+}

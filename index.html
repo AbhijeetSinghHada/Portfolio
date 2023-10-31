@@ -10,7 +10,7 @@
         <nav class="navigator">
             <div class="intro">
                 <img src="data\home\logo.png" id="logo" />
-                <span> Abhijeet Singh Hada </span>
+                <a href="mailto:abhi22hada@gmail.com">abhi22hada@gmail.com</a>
             </div>
             <div class="routers">
                 <a href="#">About</a>
@@ -21,65 +21,95 @@
         </nav>
         <article>
             <div class="home">
-                <p class="description">
-                    Hii, I am <span id="name">Abhijeet</span><br>I am a <span id="profession">Software Developer.</span>
-                </p>
-                <div class="main-image"><img src="data\home\photo.jpg" /></div>
+                <div class="about">
+                    <div class="description">
+                        Hii,<br />I am <span id="name">Abhijeet</span
+                        ><br /><span id="profession">Software Developer</span>
+                    </div>
+                    <button id="connect-button">Let's Connect</button>
+                </div>
+                <img src="..//data/home/photo.png" id="home-image" />
             </div>
+            <h2 id="project-heading">Projects</h2>
             <div class="projects" id="projects">
-                <h2>Projects</h2>
+                <div class="btn-container">
+                    <button class="prev-btn">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M15.75 19.5L8.25 12l7.5-7.5"
+                            />
+                        </svg>
+                    </button>
+                </div>
+
                 <article class="project">
-                    <img src="./data/projects/authentify/image.jpg" />
-                    <div class="project-data">
+                    <img
+                        src="./data/projects/authentify.jpg"
+                        id="project-image"
+                    />
+                    <div id="project-data">
                         <h3>Authentify : Supplychain Management System</h3>
                         <p>
                             It is a blockchain based supplychain management
-                            system.<br />
-                            The Core technologies used are Etherium Block Chain,
-                            Smart Contracts, Solidity and JavaScript.
+                            system. The Core technologies used are Etherium
+                            Block Chain, Smart Contracts, Solidity and
+                            JavaScript.
                         </p>
                         <a
                             href="https://github.com/AbhijeetSinghHada/Authentify"
+                            id="project-link"
                             >View Project</a
                         >
                     </div>
                 </article>
-                <article class="project">
 
-                    <img
-                        src="./data/projects/parking_management_system/image.jpg"
-                    />
-                    <div class="project-data">
-                        <h3>Parking Management System</h3>
-                        <p>
-                            Fast API based Parking Management System.<br />
-                            The Core technologies used are Fast API, Python and
-                            MySQL.
-                        </p>
-                        <a
-                            href="https://github.com/AbhijeetSinghHada/Parking_Management_System_FastAPI"
-                            >View Project</a
+                <div class="button-container">
+                    <button class="next-btn">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
                         >
-                    </div>
-                </article>
-            </div>
-
-            <div class="contact" id="contact">
-                <p>Contact</p>
-
-                <div class="contact-icons">
-                    <a href="mailto:abhi22hada@gmail.com"
-                        ><img src="data\icons\email.png"
-                    /></a>
-                    <a
-                        href="https://www.linkedin.com/in/abhijeet-singh-hada-7b1b3a1a0/"
-                        ><img src="data\icons\linkedin.png"
-                    /></a>
-                    <a href="https://github.com/AbhijeetSinghHada"
-                        ><img src="data\icons\github.png"
-                    /></a>
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                            />
+                        </svg>
+                    </button>
                 </div>
             </div>
+            <div id="skills">
+                <h2 id="skills-heading">Skills</h2>
+                <div id="icons"></div>
+            </div>
         </article>
+        <div id="contact-form">
+            <h2 id="contact-heading">Contact</h2>
+            <form>
+                <input type="text" value="" placeholder="Name" />
+                <input type="email" value="" placeholder="Email" />
+                <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    placeholder="Message"
+                >
+Feel Free To Describe</textarea
+                >
+            </form>
+        </div>
+        <script src="./scripts/main.js" type="module"></script>
     </body>
 </html>
